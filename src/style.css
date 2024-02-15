@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --color-1: #121214;
+    --color-2: #e1e1e6;
+    --color-3: #8234e9;
+    --color-4: #1a1a1e;
+    --color-5: #c4c4cc;
+    --color-6: #202024;
+    --color-7: #111113;
+    --color-8: #1dce9b;
+    --color-9: #202024;
+    --color-10: #c7c7c7;
+    --color-11: #692bb9;
+    --color-12: #6f00ff50;
+    --color-13: #f48f56;
+    --color-14: #ffcd1e;
+    --color-15: #ff4a4a;
+    --color-16: ;
+    --color-17: ;
+    --color-18: ;
+    --color-19: ;
+    --color-20: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    background-color: var(--color-1);
+    scroll-behavior: smooth;
+}
+
+.nav-header {
+    height: 10vh;
+    width: 100%;
+    border-bottom: 1px solid var(--color-6);
+    background-color: var(--color-7);
+}
+
+.nav-contents {
+    margin: 1rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 5rem;
+}
+
+.nav-interacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.btn-interacoes {
+    padding: 1rem 1.5rem;
+    background-color: transparent;
+    border-radius: 9px;
+    color: var(--color-5);
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-interacoes:hover {
+    background-color: var(--color-6);
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1em;
+    color: var(--color-5);
+    border-radius: 9px;
+    background-color: var(--color-3);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-12);
+}
+
+.section-introducao {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.article-foto img {
+    height: 50%;
+}
