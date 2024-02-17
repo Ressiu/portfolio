@@ -297,9 +297,9 @@ body {
 }
 
 .line {
-    height: 50px; /* Altura da linha */
-    background-color: #333; /* Cor da linha */
-    width: 1px; /* Largura da linha */
+    height: 50px;
+    background-color: #333;
+    width: 1px;
 }
 
 .linguagens {
@@ -353,6 +353,46 @@ body {
     font-family: var(--font-poppins);
     font-weight: 300;
     color: var(--color-20);
+}
+
+.quemsoueu {
+    display: none;
+    padding: 5rem 0;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    justify-items: center;
+    background-color: var(--color-7);
+    position: absolute;
+    top: 99px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--color-6);
+}
+
+.quemsoueu > i {
+    font-size: 5em;
+    color: var(--color-12);
+}
+
+.quemsoueu h1 {
+    align-items: center;
+    padding: 4rem;
+    font-size: 2em;
+    font-family: var(--font-martian-mono);
+    color: var(--color-20);
+}
+
+.quemsoueu p {
+    font-size: 1em;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    color: var(--color-5);
+    text-align: justify;
+    grid-template-rows: 2;
+}
+
+.quemsoueu h1 > i {
+    color: var(--color-3);
 }
 
 @keyframes toggleContent {

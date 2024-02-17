@@ -39,3 +39,15 @@ function mousesaiu1() {
         'linguagens',
     )[0].style.display = 'none');
 }
+
+function mouseentrou2() {
+    let quemsoueu = (document.getElementsByClassName(
+        'quemsoueu',
+    )[0].style.display = 'grid');
+}
+
+function mousesaiu2() {
+    let quemsoueu = (document.getElementsByClassName(
+        'quemsoueu',
+    )[0].style.display = 'none');
+}
