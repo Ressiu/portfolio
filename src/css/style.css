@@ -595,6 +595,23 @@ mark {
     .nav-header {
         position: relative;
     }
+    .popup-content {
+        max-height: 800px;
+        max-width: 500px;
+        background-color: var(--color-4);
+        border-radius: 6px;
+        border: 1.5px solid var(--color-3);
+        padding: 2rem 1rem;
+    }
+    .article-conteudo h1 {
+        font-size: 3em;
+    }
+    .article-conteudo p {
+        font-size: 0.7em;
+    }
+    .article-conteudo h4 {
+        font-size: 0.8em;
+    }
 }
 
 @media (min-width: 751px) {
