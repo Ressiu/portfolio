@@ -48,6 +48,7 @@ body {
     background-color: var(--color-1);
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
+    overflow: hidden;
 }
 
 .nav-header {
@@ -254,6 +255,45 @@ body {
 
 .site {
     display: none;
+}
+
+.popupalert {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    place-items: center;
+    z-index: 999999;
+    background-color: #000000cc;
+}
+
+.popup-content {
+    background-color: var(--color-4);
+    border-radius: 6px;
+    border: 1.5px solid var(--color-3);
+    padding: 10rem 5rem;
+}
+
+.popup-content h1 {
+    text-align: center;
+    color: var(--color-20);
+    font-size: 2em;
+    font-family: var(--font-martian-mono);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.popup-content p {
+    text-align: justify;
+    color: var(--color-5);
+    font-size: 1em;
+    font-weight: 300;
+    font-family: var(--font-poppins);
+}
+
+.popup-content button {
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
 }
 
 @keyframes toggleContent {
