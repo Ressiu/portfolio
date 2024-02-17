@@ -63,3 +63,21 @@ function mousesaiu3() {
         'inspiracao',
     )[0].style.display = 'none');
 }
+
+function click1() {
+    let linguagens = document.getElementsByClassName('linguagensMoba')[0];
+
+    linguagens.classList.toggle('open');
+}
+
+function click2() {
+    let quemsoueu = document.getElementsByClassName('quemsoueuMoba')[0];
+
+    quemsoueu.classList.toggle('open');
+}
+
+function click3() {
+    let inspiracao = document.getElementsByClassName('inspiracaoMoba')[0];
+
+    inspiracao.classList.toggle('open');
+}
