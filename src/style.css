@@ -48,7 +48,7 @@ body {
     background-color: var(--color-1);
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .nav-header {
@@ -296,6 +296,28 @@ body {
     margin-top: 3rem;
 }
 
+.linguagens {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    background-color: var(--color-7);
+    position: absolute;
+    top: 99px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--color-6);
+}
+
+.linguagens h1 {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    font-size: 2em;
+    font-family: var(--font-martian-mono);
+    color: var(--color-20);
+}
+
 @keyframes toggleContent {
     0% {
         opacity: 1;
@@ -345,5 +367,11 @@ body {
     }
     .nav-header {
         position: relative;
+    }
+}
+
+@media (min-width: 751px) {
+    .list-mobile {
+        display: none;
     }
 }

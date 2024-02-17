@@ -14,16 +14,28 @@ function carregarpage() {
 
     let popupalert = (document.getElementsByClassName(
         'popupalert',
-    )[0].style.display = 'grid');
+    )[0].style.display = 'none');
 
     let pageload = (document.getElementsByClassName(
         'loading',
     )[0].style.display = 'none');
 }
 
-function closepopup() {
-    let popup = (document.getElementsByClassName(
-        'popupalert',
+// function closepopup() {
+//     let popup = (document.getElementsByClassName(
+//         'popupalert',
+//     )[0].style.display = 'none');
+//     document.body.style.overflow = 'auto';
+// }
+
+function mouseentrou1() {
+    let linguagens = (document.getElementsByClassName(
+        'linguagens',
+    )[0].style.display = 'grid');
+}
+
+function mousesaiu1() {
+    let linguagens = (document.getElementsByClassName(
+        'linguagens',
     )[0].style.display = 'none');
-    document.body.style.overflow = 'auto';
 }
