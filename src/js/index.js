@@ -43,11 +43,23 @@ function mousesaiu1() {
 function mouseentrou2() {
     let quemsoueu = (document.getElementsByClassName(
         'quemsoueu',
-    )[0].style.display = 'grid');
+    )[0].style.display = 'flex');
 }
 
 function mousesaiu2() {
     let quemsoueu = (document.getElementsByClassName(
         'quemsoueu',
+    )[0].style.display = 'none');
+}
+
+function mouseentrou3() {
+    let inspiracao = (document.getElementsByClassName(
+        'inspiracao',
+    )[0].style.display = 'grid');
+}
+
+function mousesaiu3() {
+    let inspiracao = (document.getElementsByClassName(
+        'inspiracao',
     )[0].style.display = 'none');
 }

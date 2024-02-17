@@ -267,10 +267,12 @@ body {
 }
 
 .popup-content {
+    max-height: 800px;
+    max-width: 700px;
     background-color: var(--color-4);
     border-radius: 6px;
     border: 1.5px solid var(--color-3);
-    padding: 10rem 5rem;
+    padding: 3rem 2rem;
 }
 
 .popup-content h1 {
@@ -279,7 +281,7 @@ body {
     font-size: 2em;
     font-family: var(--font-martian-mono);
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .popup-content p {
@@ -287,7 +289,7 @@ body {
     color: var(--color-5);
     font-size: 1em;
     font-weight: 300;
-    font-family: var(--font-poppins);
+    font-family: var(--font-jakarta);
 }
 
 .popup-content button {
@@ -344,21 +346,21 @@ body {
     border-bottom: 1px solid var(--color-6);
 }
 
-.desc h2 {
+.desc p {
     display: flex;
     align-items: center;
     text-align: justify;
     padding: 3rem;
     font-size: 1em;
-    font-family: var(--font-poppins);
-    font-weight: 300;
+    font-family: var(--font-jakarta);
+    font-weight: 400;
     color: var(--color-20);
 }
 
 .quemsoueu {
     display: none;
-    padding: 5rem 0;
-    grid-template-columns: repeat(2, 2fr);
+    padding: 2rem 0;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
     background-color: var(--color-7);
@@ -376,7 +378,7 @@ body {
 
 .quemsoueu h1 {
     align-items: center;
-    padding: 4rem;
+    padding-top: 4rem;
     font-size: 2em;
     font-family: var(--font-martian-mono);
     color: var(--color-20);
@@ -384,15 +386,41 @@ body {
 
 .quemsoueu p {
     font-size: 1em;
-    font-family: var(--font-poppins);
+    font-family: var(--font-jakarta);
     font-weight: 400;
     color: var(--color-5);
     text-align: justify;
     grid-template-rows: 2;
+    padding: 4rem;
 }
 
 .quemsoueu h1 > i {
     color: var(--color-3);
+}
+
+.inspiracao {
+    display: none;
+    padding: 5rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--color-7);
+    position: absolute;
+    top: 99px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--color-6);
+}
+
+.inspiracao h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: var(--font-martian-mono);
+    color: var(--color-3);
+}
+
+mark {
+    background-color: var(--color-3);
 }
 
 @keyframes toggleContent {
