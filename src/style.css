@@ -48,7 +48,7 @@ body {
     background-color: var(--color-1);
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .nav-header {

@@ -14,19 +14,19 @@ function carregarpage() {
 
     let popupalert = (document.getElementsByClassName(
         'popupalert',
-    )[0].style.display = 'none');
+    )[0].style.display = 'grid');
 
     let pageload = (document.getElementsByClassName(
         'loading',
     )[0].style.display = 'none');
 }
 
-// function closepopup() {
-//     let popup = (document.getElementsByClassName(
-//         'popupalert',
-//     )[0].style.display = 'none');
-//     document.body.style.overflow = 'auto';
-// }
+function closepopup() {
+    let popup = (document.getElementsByClassName(
+        'popupalert',
+    )[0].style.display = 'none');
+    document.body.style.overflow = 'auto';
+}
 
 function mouseentrou1() {
     let linguagens = (document.getElementsByClassName(
