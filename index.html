@@ -8,37 +8,58 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Portfolio Ressiu #1 | BrainStorm</title>
 </head>
-<body>
-    <header class="nav-header">
-        <nav class="nav-contents">
-            <div class="nav-logo">
-                <img src="src/assets/logo-ressiu.png" alt="Logo Ressiu">
-            </div>
-            <div class="nav-interacoes">
-                <button class="btn-interacoes">Linguagens</button>
-                <button class="btn-interacoes">Quem sou eu?</button>
-                <button class="btn-interacoes">Inspiração</button>
-            </div>
-            <div class="nav-btns">
-                <button class="btn">Contatar</button>
-            </div>
-        </nav>
-    </header>
-    
-    <main class="main">
-        <section class="container">
-            <div class="content">
-                <article class="article-conteudo">
-                    <h4>Portfólio Ressiu <i class="ri-star-fill"></i></h4>
-                    <h1>Bem-vindo ao meu portfólio, eu sou o <span>Ressiu</span>, Web Developer</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate neque perspiciatis molestias deserunt pariatur, tenetur ipsa sit asperiores explicabo harum. Incidunt maiores, amet deleniti minima quaerat nemo omnis repellat similique.</p>
-                </article>
-                <article class="article-foto">
-                    <img src="src/assets/developing.svg" alt="Desenvolvedor trabalhando">
-                </article>
-            </div>
-        </section>
-    </main>
+<body onload="carregarpage()">
+    <div class="loading">
+        <div class="load"></div>
+    </div>
+    <div class="site">
+        <header class="nav-header">
+            <nav class="nav-contents">
+                <div class="nav-mobile-menu">
+                    <i onclick="showMenu()" class="ri-menu-fill"></i>
+                </div>
+                <div id="menuzera" class="mobile-menu-list">
+                        <ul class="list-mobile">
+                            <a href="">Aprensentação</a>
+                            <a href="">Quem sou eu?</a>
+                            <a href="">Linguagens</a>
+                            <a href="">Experiencia</a>
+                        </ul>
+                </div>
+                <div class="nav-logo">
+                    <img src="src/assets/logo-ressiu.png" alt="Logo Ressiu">
+                </div>
+                <div class="nav-interacoes">
+                    <button class="btn-interacoes">Linguagens <i class="ri-arrow-down-s-line"></i></button>
+                    <button class="btn-interacoes">Quem sou eu? <i class="ri-arrow-down-s-line"></i></button>
+                    <button class="btn-interacoes">Inspiração <i class="ri-arrow-down-s-line"></i></button>
+                    <div class="nav-btns">
+                        <button class="btn">Contatar</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="main">
+            <section class="container">
+                <div class="content">
+                    <article class="article-conteudo">
+                        <h4>Hello World<span class="coding">|</span></h4>
+                        <h1>Bem-vindo ao meu portfólio, eu sou o <span class="nome-titulo">Ressiu</span>, Web Developer</h1>
+                        <p>Olá! Meu nome é <span class="nome-paragrafo">Ressiu</span> e sou um aspirante a desenvolvedor web, focado principalmente no desenvolvimento front-end. Apesar de ainda estar no início da minha jornada, minha paixão por criar experiências digitais envolventes e funcionais é evidente em cada linha de código que escrevo.<br><br>
+                            Embora tenha apenas alguns projetos em meu portfólio, estou determinado a aprender e crescer continuamente. Acredito que cada desafio é uma oportunidade de aprimorar minhas habilidades e explorar novas possibilidades criativas.
+                            <br><br>
+                            Recebo constantes elogios de amigos e colegas sobre a qualidade e profissionalismo dos meus projetos, o que me inspira a buscar a excelência em cada trabalho que realizo.
+                            <br><br>
+                            Estou ansioso para compartilhar minha paixão pelo desenvolvimento web e colaborar em projetos futuros. Vamos criar algo extraordinário juntos!</p>
+                    </article>
+                    <article class="article-foto">
+                        <img src="src/assets/developing.svg" alt="Desenvolvedor trabalhando">
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <script src="src/index.js"></script>
 </body>
