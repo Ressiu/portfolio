@@ -860,6 +860,15 @@ mark {
     .article-conteudo h4 {
         font-size: 0.8em;
     }
+    .content-linguages {
+        grid-template-columns: repeat(1, 3fr);
+    }
+    .content-tools {
+        grid-template-columns: repeat(1, 3fr);
+    }
+    .content-idiomas {
+        grid-template-columns: repeat(1, 2fr);
+    }
 }
 
 @media (min-width: 751px) {
