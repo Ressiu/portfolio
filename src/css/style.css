@@ -25,6 +25,11 @@
     --color-18: #000000;
     --color-19: #767676;
     --color-20: #fcfcfc;
+    --color-21: #4169e1;
+    --color-22: #f7e801;
+    --color-23: ;
+    --color-24: ;
+    --color-25: ;
 
     --color-gradient-font: linear-gradient(to right, #fcfcfc 18%, #767676);
 
@@ -543,6 +548,181 @@ body {
 
 mark {
     background-color: var(--color-3);
+}
+
+.container > h1 {
+    color: var(--color-16);
+    padding: 8rem 0rem;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: var(--font-jakarta);
+}
+
+.container > h1 i {
+    color: var(--color-3);
+    padding: 0rem 0.7rem;
+}
+
+.content-linguages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    gap: 3rem;
+}
+
+.card-html {
+    background-color: var(--color-9);
+    border: 1px solid transparent;
+    padding: 2rem;
+    border-radius: 9px;
+    transition: all 0.5s ease;
+}
+
+.card-html:hover {
+    border: 1px solid var(--color-13);
+    background-color: #ac653b27;
+}
+
+.html i {
+    color: var(--color-16);
+    font-size: 2em;
+    background-color: var(--color-13);
+    border: 1px solid var(--color-16);
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.html h2 {
+    color: var(--color-13);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+.html p {
+    font-weight: 400;
+    color: var(--color-10);
+    padding: 1rem 0rem;
+    font-size: 0.8em;
+}
+
+.card-css {
+    background-color: var(--color-9);
+    border: 1px solid transparent;
+    padding: 2rem;
+    border-radius: 9px;
+    transition: all 0.5s ease;
+}
+
+.card-css:hover {
+    border: 1px solid var(--color-21);
+    background-color: #4169e128;
+}
+
+.css i {
+    color: var(--color-16);
+    font-size: 2em;
+    background-color: var(--color-21);
+    border: 1px solid var(--color-16);
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.css h2 {
+    color: var(--color-21);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+.css p {
+    font-weight: 400;
+    color: var(--color-10);
+    padding: 1rem 0rem;
+    font-size: 0.8em;
+}
+
+.card-js {
+    background-color: var(--color-9);
+    border: 1px solid transparent;
+    padding: 2rem;
+    border-radius: 9px;
+    transition: all 0.5s ease;
+}
+
+.card-js:hover {
+    border: 1px solid var(--color-14);
+    background-color: #f7e7012a;
+}
+
+.js i {
+    color: var(--color-16);
+    font-size: 2em;
+    background-color: var(--color-14);
+    border: 1px solid var(--color-16);
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.js h2 {
+    color: var(--color-22);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+.js p {
+    font-weight: 400;
+    color: var(--color-10);
+    padding: 1rem 0rem;
+    font-size: 0.8em;
+}
+
+.content-tools {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    gap: 3rem;
+}
+
+.card {
+    background-color: var(--color-9);
+    border: 1px solid transparent;
+    padding: 2rem;
+    border-radius: 9px;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    border: 1px solid var(--color-3);
+    background-color: var(--color-12);
+}
+
+.card i {
+    color: var(--color-16);
+    font-size: 2em;
+    background-color: var(--color-3);
+    border: 1px solid var(--color-16);
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.card h2 {
+    color: var(--color-3);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+.card p {
+    font-weight: 400;
+    color: var(--color-10);
+    padding: 1rem 0rem;
+    font-size: 0.8em;
 }
 
 @keyframes toggleContent {

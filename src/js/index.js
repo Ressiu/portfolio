@@ -81,3 +81,7 @@ function click3() {
 
     inspiracao.classList.toggle('open');
 }
+
+function contatar() {
+    location.href = 'https://wa.me//+5515996607614';
+}
