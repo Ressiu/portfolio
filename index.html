@@ -1,262 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
-        />
-        <link
-            rel="shortcut icon"
-            href="src/assets/logo-ressiu.png"
-            type="image/x-icon"
-        />
-        <link rel="stylesheet" href="src/css/style.css" />
-        <title>Portfolio Ressiu #1 | BrainStorm</title>
-    </head>
-    <body onload="carregarpage()">
-        <section class="loading">
-            <article class="load"></article>
-        </section>
-        <section class="popupalert">
-            <article class="popup-content">
-                <h1>Bem-vindo ao meu portfólio!</h1>
-                <p>
-                    Bem-vindo ao meu portfólio! Estou muito feliz por você estar aqui. Espero que sua experiência seja única e inspiradora. Este espaço foi criado com muito carinho para apresentar a minha pessoa e minhas habilidades como desenvolvedor front-end. Sinta-se à vontade para explorar e conhecer mais sobre meu trabalho. Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato. Mais uma vez, seja muito bem-vindo e aproveite sua visita!
-                </p>
-                <button class="btn" onclick="closepopup()">Fechar</button>
-            </article>
-        </section>
-        <div class="site">
-            <header class="nav-header">
-                <nav class="nav-contents">
-                    <section class="nav-mobile-menu">
-                        <i onclick="showMenu()" class="ri-menu-fill"></i>
-                    </section>
-                    <section id="menuzera" class="mobile-menu-list">
-                        <button
-                        onclick="click1()"
-                        class="btn-interacoes-moba"
-                    >
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css" />
+    <link rel="shortcut icon" href="src/assets/logo-ressiu.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Portfolio Ressiu #1 | BrainStorm</title>
+</head>
+
+<body onload="carregarpage()">
+    <section class="loading">
+        <article class="load"></article>
+    </section>
+    <section class="popupalert">
+        <article class="popup-content">
+            <h1>Bem-vindo ao meu portfólio!</h1>
+            <p>
+                Bem-vindo ao meu portfólio! Estou muito feliz por você estar aqui. Espero que sua experiência seja única
+                e inspiradora. Este espaço foi criado com muito carinho para apresentar a minha pessoa e minhas
+                habilidades como desenvolvedor front-end. Sinta-se à vontade para explorar e conhecer mais sobre meu
+                trabalho. Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato. Mais uma vez, seja muito
+                bem-vindo e aproveite sua visita!
+            </p>
+            <button class="btn" onclick="closepopup()">Fechar</button>
+        </article>
+    </section>
+    <div class="site">
+        <header class="nav-header">
+            <nav class="nav-contents">
+                <section class="nav-mobile-menu">
+                    <i onclick="showMenu()" class="ri-menu-fill"></i>
+                </section>
+                <section id="menuzera" class="mobile-menu-list">
+                    <button onclick="click1()" class="btn-interacoes-moba">
                         Linguagens <i class="ri-arrow-down-s-line"></i>
                     </button>
-                    <button
-                        onclick="click2()"
-                        class="btn-interacoes-moba"
-                    >
+                    <button onclick="click2()" class="btn-interacoes-moba">
                         Quem sou eu? <i class="ri-arrow-down-s-line"></i>
                     </button>
-                    <button
-                        onclick="click3()"
-                        class="btn-interacoes-moba"
-                    >
+                    <button onclick="click3()" class="btn-interacoes-moba">
                         Inspiração <i class="ri-arrow-down-s-line"></i>
                     </button>
-                    </section>
-                    <section class="nav-logo">
-                        <img
-                            src="src/assets/logo-ressiu.png"
-                            alt="Logo Ressiu"
-                        />
-                    </section>
-                    <section class="nav-interacoes">
-                        <button
-                            onclick="mouseentrou1()"
-                            onmouseenter="mouseentrou1()"
-                            onmouseleave="mousesaiu1()"
-                            class="btn-interacoes"
-                        >
-                            Linguagens <i class="ri-arrow-down-s-line"></i>
-                        </button>
-                        <button
-                            onclick="mouseentrou2()"
-                            onmouseenter="mouseentrou2()"
-                            onmouseleave="mousesaiu2()"
-                            class="btn-interacoes"
-                        >
-                            Quem sou eu? <i class="ri-arrow-down-s-line"></i>
-                        </button>
-                        <button
-                            onclick="mouseentrou3()"
-                            onmouseenter="mouseentrou3()"
-                            onmouseleave="mousesaiu3()"
-                            class="btn-interacoes"
-                        >
-                            Inspiração <i class="ri-arrow-down-s-line"></i>
-                        </button>
-                        <div class="line"></div>
-                        <section class="nav-btns">
-                            <button class="btn">Contatar</button>
-                        </section>
-                    </section>
-                    <section class="linguagensMoba">
-                        <h1>JavaScript <i class="ri-javascript-fill"></i></h1>
-                        <h1>CSS <i class="ri-css3-fill"></i></h1>
-                        <h1>HTML <i class="ri-html5-fill"></i></h1>
-                        <article class="descMoba">
-                            <p>
-                                JavaScript (JS): É uma linguagem de programação
-                                utilizada para tornar as páginas da web
-                                interativas e dinâmicas, adicionando
-                                funcionalidades como animações, validações de
-                                formulários e manipulação de eventos.
-                            </p>
-                            <p>
-                                CSS (Cascading Style Sheets): É uma linguagem de
-                                estilo usada para estilizar a apresentação de
-                                elementos HTML em uma página da web, como
-                                layout, cores e fontes.
-                            </p>
-                            <p>
-                                HTML (Hypertext Markup Language): É uma
-                                linguagem de marcação usada para criar a
-                                estrutura e o conteúdo básico de uma página da
-                                web.
-                            </p>
-                        </article>
-                    </section>
-                    <section class="quemsoueuMoba">
-                        <h1>Ressiu <i class="ri-user-heart-fill"></i></h1>
-                        <p>
-                            Olá, sou o Ressiu, um aspirante a desenvolvedor
-                            front-end. Embora seja considerado iniciante nesse
-                            vasto mundo da programação web, muitos colegas e
-                            mentores elogiam meu progresso, afirmando que estou
-                            além do que seria esperado para alguém com tão pouco
-                            tempo de estudo. Ainda que não seja novo no universo
-                            da programação em geral, dediquei-me intensamente ao
-                            estudo autodidata há apenas um mês, buscando dominar
-                            as nuances do HTML, CSS e JavaScript. Este site que
-                            você está visitando agora, meu portfólio, é um
-                            exemplo do que já fui capaz de criar usando essas
-                            três linguagens. Aos 18 anos, sou um estudante
-                            autodidata, procurando constantemente maneiras de
-                            aprimorar minhas habilidades e criar soluções
-                            criativas. Embora tenha outros projetos em meu
-                            perfil no GitHub, nenhum se compara ao nível de
-                            complexidade e dedicação investidos neste. Posso ser
-                            considerado um iniciante, mas busco deixar minha
-                            marca em cada linha de código que escrevo. Espero
-                            que aprecie meu portfólio e que considere trabalhar
-                            comigo em projetos futuros!
-                        </p>
-                    </section>
-                    <section class="inspiracaoMoba">
-                        <article>
-                            <h1>Ressiu <i class="ri-flashlight-fill"></i></h1>
-                        </article>
-                    </section>
-                    <section class="linguagens">
-                        <h1>JavaScript <i class="ri-javascript-fill"></i></h1>
-                        <h1>CSS <i class="ri-css3-fill"></i></h1>
-                        <h1>HTML <i class="ri-html5-fill"></i></h1>
-                        <article class="desc">
-                            <p>
-                                JavaScript (JS): É uma linguagem de programação
-                                utilizada para tornar as páginas da web
-                                interativas e dinâmicas, adicionando
-                                funcionalidades como animações, validações de
-                                formulários e manipulação de eventos.
-                            </p>
-                            <p>
-                                CSS (Cascading Style Sheets): É uma linguagem de
-                                estilo usada para estilizar a apresentação de
-                                elementos HTML em uma página da web, como
-                                layout, cores e fontes.
-                            </p>
-                            <p>
-                                HTML (Hypertext Markup Language): É uma
-                                linguagem de marcação usada para criar a
-                                estrutura e o conteúdo básico de uma página da
-                                web.
-                            </p>
-                        </article>
-                    </section>
-                    <section class="quemsoueu">
-                        <h1>Ressiu <i class="ri-user-heart-fill"></i></h1>
-                        <p>
-                            Olá, sou o Ressiu, um aspirante a desenvolvedor
-                            front-end. Embora seja considerado iniciante nesse
-                            vasto mundo da programação web, muitos colegas e
-                            mentores elogiam meu progresso, afirmando que estou
-                            além do que seria esperado para alguém com tão pouco
-                            tempo de estudo. Ainda que não seja novo no universo
-                            da programação em geral, dediquei-me intensamente ao
-                            estudo autodidata há apenas um mês, buscando dominar
-                            as nuances do HTML, CSS e JavaScript. Este site que
-                            você está visitando agora, meu portfólio, é um
-                            exemplo do que já fui capaz de criar usando essas
-                            três linguagens. Aos 18 anos, sou um estudante
-                            autodidata, procurando constantemente maneiras de
-                            aprimorar minhas habilidades e criar soluções
-                            criativas. Embora tenha outros projetos em meu
-                            perfil no GitHub, nenhum se compara ao nível de
-                            complexidade e dedicação investidos neste. Posso ser
-                            considerado um iniciante, mas busco deixar minha
-                            marca em cada linha de código que escrevo. Espero
-                            que aprecie meu portfólio e que considere trabalhar
-                            comigo em projetos futuros!
-                        </p>
-                    </section>
-                    <section class="inspiracao">
-                        <article>
-                            <h1>Ressiu <i class="ri-flashlight-fill"></i></h1>
-                        </article>
-                    </section>
-                </nav>
-            </header>
-
-            <main class="main">
-                <section class="container">
-                    <div class="content">
-                        <article class="article-conteudo">
-                            <h4>Hello World<span class="coding">|</span></h4>
-                            <h1>
-                                Bem-vindo ao meu portfólio, eu sou o
-                                <span class="nome-titulo">Ressiu</span>, Web
-                                Developer
-                            </h1>
-                            <p>
-                                Olá! Meu nome é
-                                <span class="nome-paragrafo">Ressiu</span> e sou
-                                um aspirante a desenvolvedor web, focado
-                                principalmente no desenvolvimento front-end.
-                                Apesar de ainda estar no início da minha
-                                jornada, minha paixão por criar experiências
-                                digitais envolventes e funcionais é
-                                <mark
-                                    >evidente em cada linha de código que
-                                    escrevo.</mark
-                                ><br /><br />
-                                Embora tenha apenas alguns projetos em meu
-                                portfólio, estou determinado a aprender e
-                                crescer continuamente. Acredito que cada desafio
-                                é uma oportunidade de aprimorar minhas
-                                habilidades e explorar novas possibilidades
-                                criativas.
-                                <br /><br />
-                                Recebo constantes elogios de amigos e colegas
-                                sobre a qualidade e profissionalismo dos meus
-                                projetos, o que me inspira a buscar a excelência
-                                em cada trabalho que realizo.
-                                <br /><br />
-                                Estou ansioso para compartilhar minha paixão
-                                pelo desenvolvimento web e colaborar em projetos
-                                futuros. Vamos criar algo extraordinário juntos!
-                            </p>
-                        </article>
-                        <article class="article-foto">
-                            <img
-                                src="src/assets/developing.svg"
-                                alt="Desenvolvedor trabalhando"
-                            />
-                        </article>
-                    </div>
                 </section>
-            </main>
-        </div>
+                <section class="nav-logo">
+                    <img src="src/assets/logo-ressiu.png" alt="Logo Ressiu" />
+                </section>
+                <section class="nav-interacoes">
+                    <button onclick="mouseentrou1()" onmouseenter="mouseentrou1()" onmouseleave="mousesaiu1()"
+                        class="btn-interacoes">
+                        Linguagens <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <button onclick="mouseentrou2()" onmouseenter="mouseentrou2()" onmouseleave="mousesaiu2()"
+                        class="btn-interacoes">
+                        Quem sou eu? <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <button onclick="mouseentrou3()" onmouseenter="mouseentrou3()" onmouseleave="mousesaiu3()"
+                        class="btn-interacoes">
+                        Inspiração <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div class="line"></div>
+                    <section class="nav-btns">
+                        <button class="btn">Contatar</button>
+                    </section>
+                </section>
+                <section class="linguagensMoba">
+                    <h1>JavaScript <i class="ri-javascript-fill"></i></h1>
+                    <h1>CSS <i class="ri-css3-fill"></i></h1>
+                    <h1>HTML <i class="ri-html5-fill"></i></h1>
+                    <article class="descMoba">
+                        <p>
+                            JavaScript (JS): É uma linguagem de programação
+                            utilizada para tornar as páginas da web
+                            interativas e dinâmicas, adicionando
+                            funcionalidades como animações, validações de
+                            formulários e manipulação de eventos.
+                        </p>
+                        <p>
+                            CSS (Cascading Style Sheets): É uma linguagem de
+                            estilo usada para estilizar a apresentação de
+                            elementos HTML em uma página da web, como
+                            layout, cores e fontes.
+                        </p>
+                        <p>
+                            HTML (Hypertext Markup Language): É uma
+                            linguagem de marcação usada para criar a
+                            estrutura e o conteúdo básico de uma página da
+                            web.
+                        </p>
+                    </article>
+                </section>
+                <section class="quemsoueuMoba">
+                    <h1>Ressiu <i class="ri-user-heart-fill"></i></h1>
+                    <p>
+                        Olá, sou o Ressiu, um aspirante a desenvolvedor
+                        front-end. Embora seja considerado iniciante nesse
+                        vasto mundo da programação web, muitos colegas e
+                        mentores elogiam meu progresso, afirmando que estou
+                        além do que seria esperado para alguém com tão pouco
+                        tempo de estudo. Ainda que não seja novo no universo
+                        da programação em geral, dediquei-me intensamente ao
+                        estudo autodidata há apenas um mês, buscando dominar
+                        as nuances do HTML, CSS e JavaScript. Este site que
+                        você está visitando agora, meu portfólio, é um
+                        exemplo do que já fui capaz de criar usando essas
+                        três linguagens. Aos 18 anos, sou um estudante
+                        autodidata, procurando constantemente maneiras de
+                        aprimorar minhas habilidades e criar soluções
+                        criativas. Embora tenha outros projetos em meu
+                        perfil no GitHub, nenhum se compara ao nível de
+                        complexidade e dedicação investidos neste. Posso ser
+                        considerado um iniciante, mas busco deixar minha
+                        marca em cada linha de código que escrevo. Espero
+                        que aprecie meu portfólio e que considere trabalhar
+                        comigo em projetos futuros!
+                    </p>
+                </section>
+                <section class="inspiracaoMoba">
+                    <article>
+                        <h1>Ressiu <i class="ri-flashlight-fill"></i></h1>
+                    </article>
+                </section>
+                <section class="linguagens">
+                    <h1>JavaScript <i class="ri-javascript-fill"></i></h1>
+                    <h1>CSS <i class="ri-css3-fill"></i></h1>
+                    <h1>HTML <i class="ri-html5-fill"></i></h1>
+                    <article class="desc">
+                        <p>
+                            JavaScript (JS): É uma linguagem de programação
+                            utilizada para tornar as páginas da web
+                            interativas e dinâmicas, adicionando
+                            funcionalidades como animações, validações de
+                            formulários e manipulação de eventos.
+                        </p>
+                        <p>
+                            CSS (Cascading Style Sheets): É uma linguagem de
+                            estilo usada para estilizar a apresentação de
+                            elementos HTML em uma página da web, como
+                            layout, cores e fontes.
+                        </p>
+                        <p>
+                            HTML (Hypertext Markup Language): É uma
+                            linguagem de marcação usada para criar a
+                            estrutura e o conteúdo básico de uma página da
+                            web.
+                        </p>
+                    </article>
+                </section>
+                <section class="quemsoueu">
+                    <h1>Ressiu <i class="ri-user-heart-fill"></i></h1>
+                    <p>
+                        Olá, sou o Ressiu, um aspirante a desenvolvedor
+                        front-end. Embora seja considerado iniciante nesse
+                        vasto mundo da programação web, muitos colegas e
+                        mentores elogiam meu progresso, afirmando que estou
+                        além do que seria esperado para alguém com tão pouco
+                        tempo de estudo. Ainda que não seja novo no universo
+                        da programação em geral, dediquei-me intensamente ao
+                        estudo autodidata há apenas um mês, buscando dominar
+                        as nuances do HTML, CSS e JavaScript. Este site que
+                        você está visitando agora, meu portfólio, é um
+                        exemplo do que já fui capaz de criar usando essas
+                        três linguagens. Aos 18 anos, sou um estudante
+                        autodidata, procurando constantemente maneiras de
+                        aprimorar minhas habilidades e criar soluções
+                        criativas. Embora tenha outros projetos em meu
+                        perfil no GitHub, nenhum se compara ao nível de
+                        complexidade e dedicação investidos neste. Posso ser
+                        considerado um iniciante, mas busco deixar minha
+                        marca em cada linha de código que escrevo. Espero
+                        que aprecie meu portfólio e que considere trabalhar
+                        comigo em projetos futuros!
+                    </p>
+                </section>
+                <section class="inspiracao">
+                    <article>
+                        <h1>Ressiu <i class="ri-flashlight-fill"></i></h1>
+                    </article>
+                </section>
+            </nav>
+        </header>
 
-        <script src="src/js/index.js"></script>
-    </body>
+        <main class="main">
+            <section class="container">
+                <div class="content">
+                    <article class="article-conteudo">
+                        <h4>Hello World<span class="coding">|</span></h4>
+                        <h1>
+                            Bem-vindo ao meu portfólio, eu sou o
+                            <span class="nome-titulo">Ressiu</span>, Web
+                            Developer
+                        </h1>
+                        <p>
+                            Olá! Meu nome é
+                            <span class="nome-paragrafo">Ressiu</span> e sou
+                            um aspirante a desenvolvedor web, focado
+                            principalmente no desenvolvimento front-end.
+                            Apesar de ainda estar no início da minha
+                            jornada, minha paixão por criar experiências
+                            digitais envolventes e funcionais é
+                            <mark>evidente em cada linha de código que
+                                escrevo.</mark><br /><br />
+                            Embora tenha apenas alguns projetos em meu
+                            portfólio, estou determinado a aprender e
+                            crescer continuamente. Acredito que cada desafio
+                            é uma oportunidade de aprimorar minhas
+                            habilidades e explorar novas possibilidades
+                            criativas.
+                            <br /><br />
+                            Recebo constantes elogios de amigos e colegas
+                            sobre a qualidade e profissionalismo dos meus
+                            projetos, o que me inspira a buscar a excelência
+                            em cada trabalho que realizo.
+                            <br /><br />
+                            Estou ansioso para compartilhar minha paixão
+                            pelo desenvolvimento web e colaborar em projetos
+                            futuros. Vamos criar algo extraordinário juntos!
+                        </p>
+                    </article>
+                    <article class="article-foto">
+                        <img src="src/assets/developing.svg" alt="Desenvolvedor trabalhando" />
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="src/js/index.js"></script>
+</body>
+
 </html>
