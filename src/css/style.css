@@ -546,6 +546,47 @@ body {
     color: var(--color-3);
 }
 
+.inspiracao {
+    display: none;
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--color-7);
+    position: absolute;
+    top: 99px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--color-6);
+}
+
+.inspiracao > i {
+    font-size: 5em;
+    color: var(--color-12);
+}
+
+.inspiracao h1 {
+    align-items: center;
+    padding-top: 4rem;
+    font-size: 2em;
+    font-family: var(--font-martian-mono);
+    color: var(--color-20);
+}
+
+.inspiracao p {
+    font-size: 1em;
+    font-family: var(--font-jakarta);
+    font-weight: 400;
+    color: var(--color-5);
+    text-align: justify;
+    grid-template-rows: 2;
+    padding: 4rem;
+}
+
+.inspiracao h1 > i {
+    color: var(--color-3);
+}
+
 mark {
     background-color: var(--color-3);
 }
@@ -723,6 +764,33 @@ mark {
     color: var(--color-10);
     padding: 1rem 0rem;
     font-size: 0.8em;
+}
+
+.footer {
+    border-top: 1px solid var(--color-6);
+    background-color: var(--color-7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container-footer {
+    display: block;
+    margin: 0 auto;
+}
+
+.container-footer > p {
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: var(--font-jakarta);
+    color: var(--color-16);
+}
+
+.content-idiomas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    gap: 3rem;
 }
 
 @keyframes toggleContent {
