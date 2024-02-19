@@ -43,6 +43,7 @@
     padding: 0;
     outline: none;
     border: none;
+    cursor: default;
     box-sizing: border-box;
     font-family: var(--font-jakarta);
 }
